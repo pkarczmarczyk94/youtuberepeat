@@ -1,0 +1,13 @@
+.content{
+	width: auto;
+	min-width: 400px;
+}
+.item{
+	padding: 5px;
+}
+label{
+	display:block;
+}
+.status{
+	cursor:pointer;
+}

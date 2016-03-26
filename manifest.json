@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouTubeRepeat",
+  "description": "Steruj otwartymi w kartach odtwarzaczami youtube z poziomu rozszerzenia",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js","myscript.js"]
+    }
+  ],
+  "background":{
+    "scripts": ["jquery.js", "background.js"]
+    },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}
